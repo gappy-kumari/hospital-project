@@ -1,0 +1,69 @@
+#doc{
+    /* border: 2px solid black; */
+    height: 700px;
+    width: 500px;
+    margin-top: -70px;
+    margin-left: 5px;
+    background-image: url(img/doc4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#topic{
+    margin-top: 100px;
+    margin-left: 790px;
+    /* border: 2px solid black; */
+    width: 500px;
+    padding: 10px;
+    color: #16a085;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#amb{
+    margin-top: -700px;
+    margin-left: 380px;
+    height: 400px;
+    width: 400px;
+    /* border: 2px solid black; */
+    background-color: #16a0845b;
+    border-radius: 50%;
+    position: relative;
+    /* font-size: 20px; */
+}
+#x{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: algerian;
+}
+#no{
+    margin-top: 300px;
+    margin-left: 300px;
+    position: absolute;
+}
+#img{
+    margin-top: -330px;
+    margin-left: 780px;
+    height: 400px;
+    width: 500px;
+    /* border: 2px solid black; */
+    background-image: url(img/ambulance.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#lower{
+    margin-top: -40px;
+    margin-left: 530px;
+    text-align: center;
+    height: 500px;
+    width: 750px;
+    padding: 5px;
+    border: 5px solid chartreuse;
+    font-family: cursive;
+    font-size: 20px;
+}
+#if{
+    height: 400px;
+    width: 550px;
+}

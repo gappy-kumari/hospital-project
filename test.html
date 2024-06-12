@@ -1,0 +1,100 @@
+<!-- <?php
+$conn=mysqli_connect('localhost','root','purnima','hubnetdb');
+error_reporting(0);
+if($_POST['submit'])
+{
+    $phone=$_POST['phone'];
+    $q="select * from student where phone='$phone'";
+    $data=mysqli_query($conn,$q);
+    $rec=mysqli_fetch_assoc($data);
+    $name=$rec['name'];
+    $hcn=$rec['hcn'];
+    $course=$rec['course'];
+    $session=$rec['session'];
+    $phone=$rec['phone'];
+    header('Content-Type:image/jpeg');
+    $image=imagecreatefromjpeg("ceri.jpg");
+    $font="algerian.ttf";
+    $font1="fff.ttf";
+    $color=imagecolorallocate($image,0,0,255);
+    imagettftext($image,150,0,1200,1000,$color,$font1,$name);
+    imagettftext($image,50,0,900,1400,$color,$font,$session);
+    imagettftext($image,50,0,2200,1250,$color,$font,$course);
+    imagettftext($image,50,0,2200,1400,$color,$font,$phone);
+    imagettftext($image,50,0,900,1250,$color,$font,$hcn);
+    imagejpeg($image);
+    imagejpeg($image,"certificate/$name.jpg");
+    
+} -->
+
+$conn=mysqli_connect('localhost','root','purnima','hospital');
+    echo($conn);
+    #error_reporting(E_ALL);
+    if($_POST['book'])
+    {
+        $n=$_POST['name'];
+        echo($n);
+        $d=$_POST['dob'];
+        $e=$_POST['email'];
+        $a=$_POST['age'];
+        $g=$_POST['gender'];
+        $c=$_POST['contact'];
+        $add=$_POST['address'];
+        $q="insert into medo values('$n','$d','$e','$a','$g','$c','$add')";
+        mysqli_query($conn,$q);
+        $conn.commit();
+
+    }
+
+
+    $conn=mysqli_connect("localhost","root","purnima","hospital");
+error_reporting(0);
+if (!$conn)
+{
+    // echo "not connected with database";
+}
+else{
+    // echo "connected with db!!!";
+if(isset($_POST['book']))
+    {
+        $n=$_POST['name'];
+        $d=$_POST['dob'];
+        $e=$_POST['email'];
+        $a=$_POST['age'];
+        $g=$_POST['gender'];
+        $c=$_POST['contact'];
+        $add=$_POST['address'];
+        $q="insert into medo values('$n','$d','$e','$a','$g','$c','$add')";
+        mysqli_query($conn,$q);
+        mysqli_close($conn);
+
+    }
+    else{
+        // echo " but not saved!!!";
+    }
+ }$conn=mysqli_connect("localhost","root","purnima","hospital");
+ error_reporting(0);
+ if (!$conn)
+ {
+     // echo "not connected with database";
+ }
+ else{
+     // echo "connected with db!!!";
+ if(isset($_POST['book']))
+     {
+         $n=$_POST['name'];
+         $d=$_POST['dob'];
+         $e=$_POST['email'];
+         $a=$_POST['age'];
+         $g=$_POST['gender'];
+         $c=$_POST['contact'];
+         $add=$_POST['address'];
+         $q="insert into medo values('$n','$d','$e','$a','$g','$c','$add')";
+         mysqli_query($conn,$q);
+         mysqli_close($conn);
+ 
+     }
+     else{
+         // echo " but not saved!!!";
+     }
+  }
